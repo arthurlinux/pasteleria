@@ -17,6 +17,7 @@
       <!-- <a href="tipos.html">Tipos</a> -->
       <a href="sabores.html">Sabores</a>
       <a href="pedidos.html">Pedidos</a>
+      <a href="pastelero.html">Pastelero</a>
       <a href="contacto.html">Contacto</a>
     </div>
   </div>
@@ -28,37 +29,70 @@
   </style>
   <div style="padding-left:20px">
     <h1>Pedido</h1>
-<div class="container">
-  <form action="mensaje.html">
-    <label for="fname">Nombre</label>
-    <input type="text" id="fname" name="nombre" placeholder="Nombre...">
+  <div class="container">
 
-    <label for="apellidos">Apellidos</label>
-    <input type="text" id="apellidos" name="apellidos" placeholder="Epellidos..">
-    <label for="correo">Correo</label>
+
+  <form action="mensaje.html" id="formulario" method="post">
+
+    <h2>Datos del cliente</h2><br>  
+
+
+    <label for="nombre">Nombre : </label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+    <label for="telefono">Telefono : </label>
     <input type="text" id="correo" name="correo" placeholder="Correo..">
     <label for="correo">Dirección</label>
     <input type="text" id="Dirección" name="Dirección" placeholder="Dirección..">
     <label for="Dirección">Teléfono</label>
     <input type="text" id="Teléfono" name="Teléfono" placeholder="Teléfono..">
-    <label for="tipo">Tipo de Pastel</label>
-    <select id="tipo" name="tipo">
-      <option value="tleches">Tres Leches</option>
-      <option value="manzana">Manzana</option>
-      <option value="mantequella">Mantequilla</option>
-      <option value="nopal">Nopal</option>
-    </select>
 
-    <label for="Comentario">Comentario</label>
-    <textarea id="subject" name="Comentario" placeholder="Comentario.." style="height:200px"></textarea>
+
+
+    <hr>
+    <h2>Datos del pastel</h2><br>
+
+    <h3>Selecciona el sabor</h3>
+    <input type="checkbox" id="topping1" name="topping1" value="tesleches">
+    <label for="topping1">Pastel de Tres Leches</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="manzana">
+    <label for="topping2">Pastel de Manzana</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="nopal">
+    <label for="topping3">Pastel de Nopal</label><br><br>
+
+    <h3>Selecciona el decorado</h3>
+    <input type="checkbox" id="topping1" name="topping4" value="Infantil">
+    <label for="topping1">Decorado infantil</label><br>
+    <input type="checkbox" id="topping2" name="topping5" value="Formal">
+    <label for="topping2">Decorado formal</label><br>
+    <input type="checkbox" id="topping3" name="topping6" value="Especial">
+    <label for="topping3">Decorado especial</label><br><br>
+
+    <h3>Ingrese una imagen de referencia para su pastel</h3>
+    <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+
+    <h3>Ingrese especificaciones para su pastel</h3>
+    <input type="text" id="Input1" name="Detalles">
+
+    <hr>
+    <h2>Datos de entrega</h2>  
+    <h3>Fecha del envio</h3>
+    <label for="dia">Fecha de entrega : </label>
+    <input type="date" id="dia" name="dia"><br>
+    <label for="correo">Hora de entrega: </label>
+    <input type="time" id="hora" name="hora"><br><br><br>
 
     <input type="submit" value="Enviar">
-    <br><br>
+
   </form>
+
+
   </div>
   </div>
   
   </body>
+  <br><br>
+  <br><br>
+  <br><br>
   <br><br>
   <div class="footer">
     <p>Derechos reservados @2022</p>
